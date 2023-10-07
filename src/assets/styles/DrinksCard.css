@@ -1,0 +1,36 @@
+  .card {
+    border: 1px solid black;
+    text-align: center;
+    width: 290px;
+    margin: auto;
+    background-color: lightblue;
+    height: 450px;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-radius: 2%;
+  }
+  .card:hover {
+    transform: scale(1.1);
+  }
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    margin-top: 50px;
+    justify-content: center;
+  }
+
+  img {
+    max-width: 90%;
+    border-radius: 5%;
+    margin-top: 12px;
+  }
+  .name {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .text {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
