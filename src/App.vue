@@ -20,7 +20,7 @@ export default {
   },
   computed: {
     limitedDrinksData() {
-      return this.drinksData.slice(0, 18);
+      return this.drinksData.slice(0, 20);
     }
   },
   methods: {
