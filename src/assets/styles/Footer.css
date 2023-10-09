@@ -1,0 +1,133 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  background: var(--background-footer);
+  color: var(--text-color-footer);
+}
+.footer .one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer a {
+  color: var(--text-color-link);
+  text-shadow: none;
+  text-decoration: none;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+}
+.footer a:hover {
+  color: var(--text-color-link-hover);
+}
+.footer .academlo {
+  color: var(--text-color-link-academlo);
+}
+.footer .academlo:hover {
+  color: var(--text-color-link-hover-academlo);
+}
+.footer div {
+  text-align: center;
+  font-size: 12px;
+  max-width: 600px;
+}
+.footer .thanks {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.footer .year {
+  margin-top: 15px;
+}
+.footer .three .icon-container {
+  display: flex;
+  flex-direction: column;
+}
+.footer .three img {
+  width: 40px;
+  padding: 5px;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+.footer .three img:hover {
+  transform: scale(1.2);
+}
+.three a .github {
+width: 45px;
+}
+.footer .one p {
+  text-align: center;
+  font-size: 12px;
+}
+.footer-title {
+  font-size: 20px !important;
+}
+.thanks img {
+  width: 80px;
+}
+
+@media (max-width: 992px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    padding-top: 15px;
+  }
+  .footer-title {
+    font-size: 18px !important;
+  }
+  .footer div {
+    max-width: none;
+  }
+  .footer .one p {
+    font-size: 12px;
+  }
+  .footer .two p {
+    font-size: 12px;
+  }
+  .footer .three {
+    padding: 0;
+  }
+  .footer .thanks {
+    padding-left: 140px;
+    padding-right: 140px;
+  }
+  .footer .thanks a {
+    font-size: 10px;  
+  }
+  .two {
+    order: 3;
+  }
+  .three {
+    order: 2;
+  }
+  .footer .two div {
+    font-size: 10px;
+  }
+  .footer .year {
+    margin-bottom: 30px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding-top: 5px;
+    margin-top: 25px;
+  }
+  .footer .thanks {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+  .footer .second {
+    padding-bottom: 30px;
+  }
+  .footer .year {
+    padding-bottom: 15px;
+  }
+}

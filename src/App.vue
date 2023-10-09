@@ -2,11 +2,13 @@
 import axios from "axios";
 import DrinksCard from "./components/DrinksCard.vue";
 import Message from "./components/Message.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   components: {
     Message,
-    DrinksCard
+    DrinksCard,
+    Footer
   },
   data() {
     return {
@@ -55,8 +57,10 @@ export default {
     </div>
     <div v-if="!isLoading">
       <DrinksCard v-if="limitedDrinksData.length >= 1" :data="limitedDrinksData" />
+      <Footer v-if="limitedDrinksData.length >= 1" :data="limitedDrinksData" />
       <Message v-else />
     </div>
+     
   </div>
 </template>
 
