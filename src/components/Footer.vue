@@ -14,8 +14,11 @@ export default {
 <template>
   <div class="footer">
     <article class="block one">
+      
+        <img :src="'/LogoCompleto.png'" class="logo" alt="Logo" />
+      
       <div class="thanks">
-      <img :src="'/coctel-footer.png'" class="coctel-icon" alt="Coctel" />
+        <img :src="'/coctel-footer.png'" class="coctel-icon" alt="Coctel" />
         <p class="thanks footer-title">
           Cocktail App
         </p>

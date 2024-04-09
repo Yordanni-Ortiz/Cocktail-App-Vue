@@ -10,9 +10,10 @@
   color: var(--text-color-footer);
 }
 .footer .one {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr)); /* Columnas automáticas con un mínimo de 200px y un máximo de 1fr */
+  justify-items: center; /* Centra horizontalmente los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
 }
 .footer a {
   color: var(--text-color-link);
@@ -44,6 +45,14 @@
 .footer .year {
   margin-top: 15px;
 }
+.footer .coctel-icon {
+  width: 60px;
+}
+.footer .logo {
+  width: 250px;
+  margin-top: 40px;
+  margin-left: 50px;
+}
 .footer .three .icon-container {
   display: flex;
   flex-direction: column;
@@ -66,9 +75,16 @@ width: 45px;
 }
 .footer-title {
   font-size: 20px !important;
+  margin: 0 !important;
 }
 .thanks img {
   width: 80px;
+}
+
+@media (max-width: 1540px) {
+  .footer .logo {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 992px) {
@@ -93,10 +109,7 @@ width: 45px;
   .footer .three {
     padding: 0;
   }
-  .footer .thanks {
-    padding-left: 140px;
-    padding-right: 140px;
-  }
+ 
   .footer .thanks a {
     font-size: 10px;  
   }
@@ -113,16 +126,19 @@ width: 45px;
     margin-bottom: 30px;
     font-size: 10px;
   }
+  .footer .one {
+    margin-bottom: 50px;
+  }
+  .footer .thanks {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
 }
 
 @media (max-width: 768px) {
   .footer {
     padding-top: 5px;
     margin-top: 25px;
-  }
-  .footer .thanks {
-    padding-left: 55px;
-    padding-right: 55px;
   }
   .footer .second {
     padding-bottom: 30px;
