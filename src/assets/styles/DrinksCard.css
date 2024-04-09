@@ -1,12 +1,10 @@
   .card {
-    border: 1px solid black;
+    border: 3px solid #FFAA09;
     text-align: center;
     width: 250px;
     margin: auto;
     background-color: #541515;
     height: 400px;
-    overflow: hidden;
-    overflow-y: scroll;
     border-radius: 2%;
   }
   .card:hover {
@@ -37,8 +35,12 @@
   .text h3 {
     color: #FFAA09;
   }
-  .text p {
+  .instructions {
     color: #ffffff;
+    width: 220px;
+    height: 90px;
+    overflow: hidden;
+    overflow-y: auto;
   }
 
   @media (max-width: 1400px) {

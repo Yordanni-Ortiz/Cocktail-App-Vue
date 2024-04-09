@@ -34,7 +34,7 @@ name: 'DrinksCard',
         </div>
         <div class="text">
           <h3 class="name">{{ info.strDrink }}</h3>
-          <p>{{ info.strInstructions }}</p>
+          <p class="instructions">{{ info.strInstructions }}</p>
         </div>
       </div>
     </div>
