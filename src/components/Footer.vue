@@ -13,22 +13,20 @@ export default {
 
 <template>
   <div class="footer">
-    <article class="block one">
-      
+    <article class="one">
         <img :src="'/LogoCompleto.png'" class="logo" alt="Logo" />
-      
       <div class="thanks">
         <img :src="'/coctel-footer.png'" class="coctel-icon" alt="Coctel" />
-        <p class="thanks footer-title">
+        <p class="container-title">
           Cocktail App
         </p>
       </div>
     </article>
-    <article class="block two">
-      <p class="thanks footer-title">
+    <article class="two">
+      <p class="container-title">
         ¡Gracias por visitar mi página web, espero que podamos trabajar juntos próximamente!
       </p>
-      <div class="thanks second">
+      <div class="thanks">
         <span>
           Si deseas contactarme, puedes hacerlo a través del formulario o de
           mi correo electrónico
@@ -46,8 +44,8 @@ export default {
         © 2023 - todos los derechos reservados
       </div>
     </article>
-    <article class="block three">
-      <p class="thanks footer-title">
+    <article class="three">
+      <p class="container-title">
         Contacto
       </p>
       <div class="icon-container">

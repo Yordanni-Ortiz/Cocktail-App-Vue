@@ -9,11 +9,32 @@
   background: var(--background-footer);
   color: var(--text-color-footer);
 }
+.footer .thanks {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.footer .container-title {
+  font-size: 20px;
+  margin: 20px 0;
+  text-align: center;
+}
 .footer .one {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr)); /* Columnas automáticas con un mínimo de 200px y un máximo de 1fr */
-  justify-items: center; /* Centra horizontalmente los elementos */
-  align-items: center; /* Centra verticalmente los elementos */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  justify-items: center; 
+  align-items: center; 
+}
+.footer .logo {
+  width: 250px;
+  margin-top: 40px;
+  margin-left: 50px;
+  max-width: 120%;
+}
+.footer .coctel-icon {
+  width: 60px;
+}
+.footer .year {
+  margin-top: 15px;
 }
 .footer a {
   color: var(--text-color-link);
@@ -26,32 +47,10 @@
 .footer a:hover {
   color: var(--text-color-link-hover);
 }
-.footer .academlo {
-  color: var(--text-color-link-academlo);
-}
-.footer .academlo:hover {
-  color: var(--text-color-link-hover-academlo);
-}
 .footer div {
   text-align: center;
   font-size: 12px;
   max-width: 600px;
-}
-.footer .thanks {
-  margin-top: 30px;
-  margin-bottom: 15px;
-  text-align: center;
-}
-.footer .year {
-  margin-top: 15px;
-}
-.footer .coctel-icon {
-  width: 60px;
-}
-.footer .logo {
-  width: 250px;
-  margin-top: 40px;
-  margin-left: 50px;
 }
 .footer .three .icon-container {
   display: flex;
@@ -63,25 +62,18 @@
   margin: 0;
   transition: all 0.3s ease;
 }
+.footer .three a {
+  width: 40px;
+  margin: auto;
+}
 .footer .three img:hover {
   transform: scale(1.2);
 }
 .three a .github {
-width: 45px;
-}
-.footer .one p {
-  text-align: center;
-  font-size: 12px;
-}
-.footer-title {
-  font-size: 20px !important;
-  margin: 0 !important;
-}
-.thanks img {
-  width: 80px;
+  width: 45px;
 }
 
-@media (max-width: 1540px) {
+@media (max-width: 1439.5px) {
   .footer .logo {
     margin-left: 0;
   }
@@ -94,30 +86,27 @@ width: 45px;
     padding: 0;
     padding-top: 15px;
   }
-  .footer-title {
-    font-size: 18px !important;
-  }
+  
   .footer div {
     max-width: none;
   }
   .footer .one p {
-    font-size: 12px;
+    font-size: 16px;
   }
   .footer .two p {
     font-size: 12px;
   }
+  .footer .three p {
+    font-size: 16px;
+  }
   .footer .three {
     padding: 0;
   }
- 
   .footer .thanks a {
     font-size: 10px;  
   }
   .two {
     order: 3;
-  }
-  .three {
-    order: 2;
   }
   .footer .two div {
     font-size: 10px;
@@ -125,9 +114,6 @@ width: 45px;
   .footer .year {
     margin-bottom: 30px;
     font-size: 10px;
-  }
-  .footer .one {
-    margin-bottom: 50px;
   }
   .footer .thanks {
     padding-left: 55px;
@@ -139,9 +125,6 @@ width: 45px;
   .footer {
     padding-top: 5px;
     margin-top: 25px;
-  }
-  .footer .second {
-    padding-bottom: 30px;
   }
   .footer .year {
     padding-bottom: 15px;
